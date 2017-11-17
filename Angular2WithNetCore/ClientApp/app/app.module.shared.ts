@@ -9,6 +9,7 @@ import { CounterComponent } from './components/counter/counter.component';
 import { SummernoteComponent } from "./components/summernote/summernote.component";
 import { Ng2Summernote } from 'ng2-summernote/ng2-summernote';
 import { ModalComponent } from "./components/modalBootstrap/modal.component";
+import { MeetingTypeComponent } from "./components/meetingType/meetingType.component";
 
 export const sharedConfig: NgModule = {
     bootstrap: [ AppComponent ],
@@ -20,7 +21,8 @@ export const sharedConfig: NgModule = {
         SummernoteComponent,
         Ng2Summernote,
         ModalComponent,
-        HomeComponent
+        HomeComponent,
+        MeetingTypeComponent
     ],
     imports: [
         RouterModule.forRoot([
@@ -30,6 +32,7 @@ export const sharedConfig: NgModule = {
             { path: 'fetch-data', component: FetchDataComponent },
             { path: 'summer-note', component: SummernoteComponent },
             { path: 'modal', component: ModalComponent },
+            { path: 'meetingType', component: MeetingTypeComponent },
             { path: '**', redirectTo: 'home' }
         ])
     ]

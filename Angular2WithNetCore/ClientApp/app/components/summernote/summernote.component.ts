@@ -21,7 +21,8 @@ export class SummernoteComponent implements OnInit {
             click: function () {
                 // invoke insertText method with 'hello' on editor module.
                 //context.invoke('editor.insertText', 'hello');
-                //SHOW MODAL
+                //SHOW MODAL''
+                $('#myModal').modal();
             }
         });
 
